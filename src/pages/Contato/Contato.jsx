@@ -1,7 +1,6 @@
-
 function Contato(){
     return(
-        <div className={styles.Contato}>
+        <div className="flex bg">
             <h1>Contato</h1>
         </div>
     )

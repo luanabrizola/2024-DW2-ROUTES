@@ -1,10 +1,6 @@
-import styles from "./Home.module.css"
-import Menu from "../../Componentes/Menu/Menu"
-
 function Home(){
     return(
-        <div className={styles.Home}>
-            <Menu />
+        <div className="flex flex-1 bg-red-600">
             <h1>Home</h1>
         </div>
     )
