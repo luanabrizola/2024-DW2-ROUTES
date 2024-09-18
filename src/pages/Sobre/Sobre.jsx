@@ -1,9 +1,10 @@
+import Pagina from "../../Componentes/Pagina"
+
 function Sobre(){
     return(
-        <div className="flex">
-            
-            <h1>sobre</h1>
-        </div>
+        <Pagina titulo="Sobre" subtitulo="Sobre mim">
+
+        </Pagina>
     )
 }
 

@@ -1,8 +1,10 @@
+import Pagina from "../../Componentes/Pagina"
+
 function Contato(){
     return(
-        <div className="flex bg">
-            <h1>Contato</h1>
-        </div>
+        <Pagina titulo="Contato" subtitulo="Contate-me">
+
+        </Pagina>
     )
 }
 

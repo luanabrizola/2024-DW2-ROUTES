@@ -7,6 +7,7 @@ import Sobre from './pages/Sobre/Sobre.jsx'
 import Page404 from './pages/Page404/Page404.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
+import Estado1 from './pages/Estado1.jsx'
 
 // const rotas = createBrowserRouter([
 //   {path:"/", element:<Home/>},
@@ -24,6 +25,7 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route index path='/home' element={<Home/>} />
     <Route path='/sobre' element={<Sobre/>} />
     <Route path='/contato' element={<Contato/>} />
+    <Route path='/estado1' element={<Estado1/>} />
     <Route path='*' element={<Page404/>} />
   </Route>  
 ))
