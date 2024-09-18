@@ -4,7 +4,7 @@ import { useState } from "react"
 function Estado1(){
     let numero = 11
 
-    const [num, alteraNum]=useState(0)
+    const [num, setNum]=useState(0)
     // const estado=useState(500)
     // const num= estado[0]
     // const alteraNum =estado[1]
@@ -12,11 +12,7 @@ function Estado1(){
     console.log(num)
 
     function incrementar(){
-        numero = numero + 1
-        console.log(numero)
-
-        alteraNum(200)
-
+        setNum(num+1)
     }
 
 
