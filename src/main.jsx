@@ -6,14 +6,11 @@ import Contato from './pages/Contato.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Page404 from './pages/Page404.jsx'
 import Layout from './pages/Layout.jsx'
-import Estado1 from './pages/Estado1.jsx'
-// import Home from './pages/Home.jsx'
-// import Contato from './pages/Contato.jsx'
-// import Sobre from './pages/Sobre.jsx'
-// import Page404 from './pages/Page404.jsx'
+import Estado2 from './pages/Estado/Estado2.jsx'
+import Estado1 from './pages/Estado/Estado1.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-// import Layout from './Layout.jsx'
-// import Estado1 from './pages/Estado1.jsx'
+import CampoTexto from './pages/Estado/CampoTexto.jsx'
+
 
 // const rotas = createBrowserRouter([
 //   {path:"/", element:<Home/>},
@@ -32,6 +29,8 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='/sobre' element={<Sobre/>} />
     <Route path='/contato' element={<Contato/>} />
     <Route path='/estado1' element={<Estado1/>} />
+    <Route path='/estado2' element={<Estado2/>} />
+    <Route path='/campoTexto' element={<CampoTexto/>}/>
     <Route path='*' element={<Page404/>} />
   </Route>  
 ))
