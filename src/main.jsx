@@ -9,7 +9,7 @@ import Layout from './pages/Layout.jsx'
 import Estado2 from './pages/Estado/Estado2.jsx'
 import Estado1 from './pages/Estado/Estado1.jsx'
 import CampoTexto from './pages/Estado/CampoTexto.jsx'
-import Contador from './pages/Contator.jsx'
+import Contador from './pages/Contador.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 
 const rotas = createBrowserRouter(createRoutesFromElements(
