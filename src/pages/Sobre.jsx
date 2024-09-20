@@ -1,4 +1,4 @@
-import Pagina from "../../Componentes/Pagina"
+import Pagina from "../Componentes/Pagina"
 
 function Sobre(){
     return(
