@@ -8,19 +8,9 @@ import Page404 from './pages/Page404.jsx'
 import Layout from './pages/Layout.jsx'
 import Estado2 from './pages/Estado/Estado2.jsx'
 import Estado1 from './pages/Estado/Estado1.jsx'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import CampoTexto from './pages/Estado/CampoTexto.jsx'
-
-
-// const rotas = createBrowserRouter([
-//   {path:"/", element:<Home/>},
-//   {path:"/home", element:<Home/>},
-//   {path:"/contato", element:<Contato/>},
-//   {path:"/sobre", element:<Sobre/>},
-//   {path:"*", element:<Page404/>}
-// ])
-
-// vai pegar o layout dentro de todos os itens dentro da rota   <Route path='/' element={<Layout />}>
+import Contador from './pages/Contator.jsx'
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 
 const rotas = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -31,6 +21,7 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='/estado1' element={<Estado1/>} />
     <Route path='/estado2' element={<Estado2/>} />
     <Route path='/campoTexto' element={<CampoTexto/>}/>
+    <Route path='/contador' element={<Contador/>}/>
     <Route path='*' element={<Page404/>} />
   </Route>  
 ))

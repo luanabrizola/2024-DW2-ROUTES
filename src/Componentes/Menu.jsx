@@ -1,4 +1,4 @@
-import { IconAddressBook, IconCircleNumber1, IconCircleNumber2, IconHome, IconInfoCircle, IconRouteAltLeft, IconLetterCaseToggle } from "@tabler/icons-react"
+import { IconAddressBook, IconCircleNumber1, IconCircleNumber2, IconHome, IconInfoCircle, IconRouteAltLeft, IconLetterCaseToggle, IconNumber123 } from "@tabler/icons-react"
 import { NavLink } from "react-router-dom"
 
 function Menu() {
@@ -32,6 +32,7 @@ function Menu() {
                 <NavLink to="/home" className={getEstilo}> <IconHome />Home</NavLink>
                 <NavLink to="/contato" className={getEstilo}><IconAddressBook />Contato</NavLink>
                 <NavLink to="/sobre" className={getEstilo}><IconInfoCircle />Sobre</NavLink>
+                <NavLink to='contador' className={getEstilo}><IconNumber123/>Contador</NavLink>
                 <p className="p-2 text-gray-500">Estados</p>
                 <NavLink to="/estado1" className={getEstilo}><IconCircleNumber1/>Estado1</NavLink>
                 <NavLink to="/estado2" className={getEstilo}><IconCircleNumber2/>Estado2</NavLink>
