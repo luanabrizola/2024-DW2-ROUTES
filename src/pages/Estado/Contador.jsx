@@ -1,4 +1,4 @@
-import Pagina from "../Componentes/Pagina";
+import Pagina from "../../Componentes/Pagina";
 import { useState } from "react";
 import { IconMinus, IconPlus } from "@tabler/icons-react";
 
