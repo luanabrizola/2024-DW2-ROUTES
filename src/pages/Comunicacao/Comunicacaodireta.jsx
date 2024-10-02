@@ -1,4 +1,4 @@
-import Pagina from "../../Componentes/Pagina"
+import Pagina from '../../Componentes/Pagina'
 
 function ComunicacaoDireta(){
     return(
