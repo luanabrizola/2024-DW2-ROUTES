@@ -10,7 +10,9 @@ import Estado2 from './pages/Estado/Estado2.jsx'
 import Estado1 from './pages/Estado/Estado1.jsx'
 import CampoTexto from './pages/Estado/CampoTexto.jsx'
 import Contador from './pages/Estado/Contador.jsx'
+import ComunicacaoDireta from './pages/Comunicacao/Comunicacaodireta.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import ComunicacaoIndireta from './pages/Comunicacao/Comunicacaoindireta.jsx'
 
 const rotas = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -22,6 +24,8 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='/estado2' element={<Estado2/>} />
     <Route path='/campoTexto' element={<CampoTexto/>}/>
     <Route path='/contador' element={<Contador/>}/>
+    <Route path='/direta' element={<ComunicacaoDireta/>}/>
+    <Route path='/indireta' element={<ComunicacaoIndireta/>}/>
     <Route path='*' element={<Page404/>} />
   </Route>  
 ))

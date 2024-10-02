@@ -1,4 +1,4 @@
-import { IconAddressBook, IconCircleNumber1, IconCircleNumber2, IconHome, IconInfoCircle, IconRouteAltLeft, IconLetterCaseToggle, IconNumber123 } from "@tabler/icons-react"
+import { IconMessageDown, IconMessageUp, IconBrandReact, IconAddressBook, IconCircleNumber1, IconCircleNumber2, IconHome, IconInfoCircle, IconRouteAltLeft, IconLetterCaseToggle, IconNumber123 } from "@tabler/icons-react"
 import { NavLink } from "react-router-dom"
 
 function Menu() {
@@ -24,7 +24,7 @@ function Menu() {
         <div className={`bg-slate-600 w-60 h-screen
         flex flex-col `}>
             <header className="flex gap-1 justify-center p-3 border-b border-slate-300 border-solid">
-                <IconRouteAltLeft />
+                <IconBrandReact />
                 <span className="font-bold">React Rotas</span>
 
             </header>
@@ -37,6 +37,10 @@ function Menu() {
                 <NavLink to="/estado1" className={getEstilo}><IconCircleNumber1/>Estado1</NavLink>
                 <NavLink to="/estado2" className={getEstilo}><IconCircleNumber2/>Estado2</NavLink>
                 <NavLink to='/campoTexto' className={getEstilo}><IconLetterCaseToggle/>Campo de texto</NavLink>
+                <p className="p-2 text-gray-500">Comunicação</p>
+                <NavLink to='/direta' className={getEstilo}><IconMessageDown/>Comunicação direta</NavLink>
+                <NavLink to='/indireta' className={getEstilo}><IconMessageUp/>Comunicação indireta</NavLink>
+
             </nav>
             <footer className="absolute bottom-0 p-3 text-sm">
                 <span>Desenvolvimento Web 2</span>
