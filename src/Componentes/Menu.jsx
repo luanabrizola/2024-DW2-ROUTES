@@ -40,7 +40,9 @@ function Menu() {
                 <p className="p-2 text-gray-500">Comunicação</p>
                 <NavLink to='/direta' className={getEstilo}><IconMessageDown/>Comunicação direta</NavLink>
                 <NavLink to='/indireta' className={getEstilo}><IconMessageUp/>Comunicação indireta</NavLink>
-
+                <p className="p-2 text-gray-500">Hooks</p>
+                <NavLink to='effect' className={getEstilo}>UseEffect</NavLink>
+                <NavLink to='ref' className={getEstilo}>UseRef</NavLink>
             </nav>
             <footer className="absolute bottom-0 p-3 text-sm">
                 <span>Desenvolvimento Web 2</span>

@@ -13,6 +13,9 @@ import Contador from './pages/Estado/Contador.jsx'
 import ComunicacaoDireta from './pages/Comunicacao/Comunicacaodireta.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import ComunicacaoIndireta from './pages/Comunicacao/Comunicacaoindireta.jsx'
+import UseEffect from './pages/hooks-basicos/UseEffect.jsx'
+import UseRef from './pages/hooks-basicos/UseRef.jsx'
+
 
 const rotas = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -26,6 +29,11 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='/contador' element={<Contador/>}/>
     <Route path='/direta' element={<ComunicacaoDireta/>}/>
     <Route path='/indireta' element={<ComunicacaoIndireta/>}/>
+    <Route path='/effect' element={<UseEffect/>}/>
+    <Route path='/ref' element={<UseRef/>}/>
+    
+    
+
     <Route path='*' element={<Page404/>} />
   </Route>  
 ))
