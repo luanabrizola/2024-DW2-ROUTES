@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FilhoIndireta } from "./FilhoIndireta"
+import FilhoIndireta from '../indireta/FilhoIndireta'
 
 function PaiIndireta() {
   const [nome, setNome] = useState("")
