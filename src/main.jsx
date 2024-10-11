@@ -15,6 +15,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import ComunicacaoIndireta from './pages/Comunicacao/Comunicacaoindireta.jsx'
 import UseEffect from './pages/hooks-basicos/UseEffect.jsx'
 import UseRef from './pages/hooks-basicos/UseRef.jsx'
+import Tradutor from './pages/Tradutor.jsx'
 
 
 const rotas = createBrowserRouter(createRoutesFromElements(
@@ -31,6 +32,7 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='/indireta' element={<ComunicacaoIndireta/>}/>
     <Route path='/effect' element={<UseEffect/>}/>
     <Route path='/ref' element={<UseRef/>}/>
+    <Route path='/tradutor' element={<Tradutor/>}/>
     
     
 
